@@ -29,7 +29,7 @@ The target variable is **Churn** (`Yes` or `No`), converted to binary values (`1
 
 ---
 
-## 🔍 Features Used
+## Features Used
 
 | Category         | Features                                                                 |
 |------------------|--------------------------------------------------------------------------|
@@ -39,19 +39,19 @@ The target variable is **Churn** (`Yes` or `No`), converted to binary values (`1
 
 ---
 
-## 🧠 Models Implemented
+## Models Implemented
 
 Three classification models are trained using a unified preprocessing pipeline:
 
-- 🎯 **Random Forest**
-- 🔢 **Logistic Regression**
-- ⚡ **XGBoost**
+- **Random Forest**
+- **Logistic Regression**
+- **XGBoost**
 
 Each model is trained using a **scikit-learn `Pipeline`** to ensure standardized preprocessing and reproducibility.
 
 ---
 
-## ⚙️ Project Structure
+## Project Structure
 
 ```
 ├── churn_features.pkl                 # List of input features used during training
@@ -67,7 +67,7 @@ Each model is trained using a **scikit-learn `Pipeline`** to ensure standardized
 
 ---
 
-## 🏗️ Pipeline Steps
+## Pipeline Steps
 
 ### 1. **Data Cleaning**
 
@@ -100,15 +100,22 @@ All models are saved as `.pkl` files using `joblib`.
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
+### Step 1: Clone the repository
+   ```bash
+   git clone https://github.com/amitkharche/classification_customer_churn_prediction_LogsticReg_RandomForest_XGBoost.git
+   cd classification_customer_churn_prediction_LogsticReg_RandomForest_XGBoost
 
-### 🔧 Step 1: Install Dependencies
+   ```
+
+
+### Step 2: Install Dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### 📈 Step 2: Train Models
+### Step 3: Train Models
 
 ```
 python model_training.py
@@ -120,7 +127,7 @@ This will generate:
 - `xgboost_churn_model.pkl`
 - `churn_features.pkl`
 
-### 🖥️ Step 3: Run Streamlit App (Optional)
+### Step 4: Run Streamlit App (Optional)
 
 ```
 streamlit run app.py
@@ -130,7 +137,7 @@ This will launch a browser-based UI for making churn predictions interactively.
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 
 Below are the main dependencies:
 
@@ -146,7 +153,7 @@ streamlit
 
 ---
 
-## 📊 Future Enhancements
+## Future Enhancements
 
 - Add SHAP-based model explainability
 - Model performance comparison dashboard
@@ -155,7 +162,7 @@ streamlit
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 - [IBM Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
 - Built using Python, scikit-learn, and XGBoost
